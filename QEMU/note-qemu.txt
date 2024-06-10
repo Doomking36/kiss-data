@@ -1,0 +1,9 @@
+Before building qemu, we will first need to install 'libslirp' package and add "--enable-slirp" to the qemu build file before compiling qemu.
+
+By building and installing libslirp first and building it with qemu, it will allow us to have network in qemu or else we will get this error.
+
+"-nic user: network backend 'user' is not ompiled into this binary" 
+
+Because the network commandline is "-nic user,hostfwd=tcp::5555-:22"
+
+
