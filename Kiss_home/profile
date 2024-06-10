@@ -1,0 +1,16 @@
+# KISS Path Configuration
+export KISS_PATH="/home/dk/repos/repo/core"
+KISS_PATH="$KISS_PATH:/home/dk/repos/xorg/extra"
+KISS_PATH="$KISS_PATH:/home/dk/repos/xorg/xorg"
+KISS_PATH="$KISS_PATH:/home/dk/repos/xorg/community"
+KISS_PATH="$KISS_PATH:/home/dk/repos/fire/xorg"
+KISS_PATH="$KISS_PATH:/home/dk/repos/repo/extra"
+KISS_PATH="$KISS_PATH:/home/dk/repos/repo/wayland"
+KISS_PATH="$KISS_PATH:/home/dk/repos/community/community"
+
+# Build Flags
+export CFLAGS="-march=x86-64 -mtune=generic -pipe -O2"
+export CXXFLAGS="-march=x86-64 -mtune=generic -pipe -O2"
+export MAKEFLAGS="-j8"
+export SAMUFLAGS="-j8"
+export KISS_TMPDIR=/tmp
